@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Contact Us — Redamancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- Overlay for mobile menu -->
+<div id="overlay"></div>
+
+<!-- NAV -->
+<nav class="main-nav">
+  <a href="index.html" class="logo">
+    <img src="pictures\REDAMANCY LOGO.png" alt="Redamancy" class="footer-logo-img">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="events-ott.html">Events OTT</a></li>
+    <li><a href="photography.html">Photography</a></li>
+    <li><a href="contact.html" class="nav-btn">Contact Us</a></li>
+  </ul>
+  <button class="ham" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<nav class="mob-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="about.html" onclick="closeMenu()">About Us</a>
+  <a href="photography.html" onclick="closeMenu()">Photography</a>
+  <a href="events-ott.html" onclick="closeMenu()">Events OTT</a>
+  <a href="contact.html" onclick="closeMenu()">Contact Us</a>
+</nav>
+
+<section id="contact">
+
+  <!-- ═══ HERO ═══ -->
+  <div class="contact-hero">
+    <img src="pictures\prewed1.jpeg"
+         alt="Cinematic wedding moment captured in golden hour"
+         class="ph-hero-img">
+    <div class="contact-hero-inner">
+      <div class="tag">Get In Touch</div>
+      <h1>Let's talk weddings <span class="amp">&amp;</span> wonder</h1>
+      <p>Whether you're planning a wedding, launching a brand, or curious about Events OTT — we'd love to hear your story.</p>
+      <a href="#book" class="scroll-cta">
+        Get In Touch
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v10M4 9l4 4 4-4"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ═══ BODY: REACH OUT + FORM ═══ -->
+  <div class="contact-body" id="book">
+    <div class="inner">
+
+      <!-- LEFT — Reach out to us -->
+      <div class="reach-col">
+        <h2>Reach out to <em>us</em></h2>
+        <p class="lede">Pick whichever channel suits you — we usually reply within a few hours during studio hours.</p>
+
+        <div class="reach-list">
+          <a class="reach-item" href="https://maps.google.com" target="_blank" rel="noopener">
+            <div class="reach-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <circle cx="12" cy="11" r="3"/>
+              </svg>
+            </div>
+            <div class="reach-meta">
+              <div class="reach-label">Studio</div>
+              <div class="reach-value">Honers Aquanties, Tellapur road<br>Hyderabad — 500046, India</div>
+            </div>
+          </a>
+
+          <a class="reach-item" href="tel:+919940144369">
+            <div class="reach-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+            </div>
+            <div class="reach-meta">
+              <div class="reach-label">Call</div>
+              <div class="reach-value">+91 99401 44369</div>
+            </div>
+          </a>
+
+          <a class="reach-item" href="https://wa.me/919940144369" target="_blank" rel="noopener">
+            <div class="reach-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+              </svg>
+            </div>
+            <div class="reach-meta">
+              <div class="reach-label">WhatsApp</div>
+              <div class="reach-value">+91 99401 44369</div>
+            </div>
+          </a>
+
+          <a class="reach-item" href="mailto:kodurisaipavantanooj@gmail.com">
+            <div class="reach-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div class="reach-meta">
+              <div class="reach-label">Email</div>
+              <div class="reach-value">kodurisaipavantanooj@gmail.com</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="reach-socials">
+          <a href="https://www.instagram.com/redamancystudios?igsh=MWY1dHFycmVtdm5uOQ==" class="sl" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        
+          <a href="https://youtube.com/@redamancystudios" class="sl" aria-label="YouTube" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT — minimal form -->
+      <div class="form-card reveal">
+        <form action="https://api.web3forms.com/submit" method="POST" class="form-card reveal">
+
+  <!-- Web3Forms Access Key -->
+  <input type="hidden" name="access_key" value="423c7b97-c676-4307-815e-c09a145de375">
+
+  <h2>Drop your <em>details</em></h2>
+  <p class="form-sub">
+    We'll connect with you soon — usually the same day.
+  </p>
+
+  <div class="fg-min">
+    <label for="cname">Name</label>
+    <input 
+      id="cname"
+      type="text"
+      name="name"
+      placeholder="Your full name"
+      required
+    />
+  </div>
+
+  <div class="fg-min">
+    <label for="cemail">Email</label>
+    <input 
+      id="cemail"
+      type="email"
+      name="email"
+      placeholder="you@email.com"
+      required
+    />
+  </div>
+
+  <div class="fg-min">
+    <label for="cphone">Mobile Number</label>
+    <input 
+      id="cphone"
+      type="tel"
+      name="phone"
+      placeholder="+91 00000 00000"
+      required
+    />
+  </div>
+
+  <div class="fg-min">
+    <label for="cservice">Service Interest</label>
+    <select id="cservice" name="service" required>
+      <option value="" disabled selected>Select a service</option>
+      <option>Wedding Photography</option>
+      <option>Couples Photography</option>
+      <option>Commercial Photography</option>
+      <option>Event Photography</option>
+      <option>Events OTT — Early Access</option>
+      <option>General Inquiry</option>
+    </select>
+  </div>
+
+  <div class="fg-min">
+    <label for="cmsg">
+      Your Message
+      <span style="color:var(--subtle);text-transform:none;letter-spacing:0">
+        (optional)
+      </span>
+    </label>
+
+    <textarea
+      id="cmsg"
+      name="message"
+      placeholder="Tell us about your occasion, event date, location…"
+    ></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-gold send-btn">
+    Send Message
+
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px">
+      <path d="M14 2L2 8.5 7 9.5M14 2L9 14l-2-4.5M14 2L7 9.5m0 0L9 14"/>
+      </svg>
+       </button>
+     </form>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="fl">
+      <img src="pictures\REDAMANCY LOGO.png" alt="Redamancy" width="150" height="50">
+    </div>
+    <div class="ftag">Where Moments Become Legacy</div>
+  </div>
+  <div class="flinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="events-ott.html">Events OTT</a>
+    <a href="photography.html">Photography</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+  <div class="fright">
+    <div class="fsoc">
+      <a href="https://www.instagram.com/redamancystudios?igsh=MWY1dHFycmVtdm5uOQ==" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      <a href="https://youtube.com/@redamancystudios" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+    </div>
+    <div class="fcopy">© 2025 Redamancy. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

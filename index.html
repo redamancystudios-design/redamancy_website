@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Redamancy — Photography & Events OTT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- Overlay for mobile menu -->
+<div id="overlay"></div>
+
+<!-- NAV -->
+<nav class="main-nav">
+  <a href="index.html" class="logo">
+    <img src="pictures/REDAMANCY%20LOGO.png" alt="Redamancy" class="logo-img">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="events-ott.html">Events OTT</a></li>
+    <li><a href="photography.html">Photography</a></li>
+    <li><a href="contact.html" class="nav-btn">Contact Us</a></li>
+  </ul>
+  <button class="ham" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<nav class="mob-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="about.html" onclick="closeMenu()">About Us</a>
+  <a href="photography.html" onclick="closeMenu()">Photography</a>
+  <a href="events-ott.html" onclick="closeMenu()">Events OTT</a>
+  <a href="contact.html" onclick="closeMenu()">Contact Us</a>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="home">
+  <img src="pictures/prewedb.jpeg" alt="" class="hero-img" aria-hidden="true">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+
+  <div class="hero-c">
+    
+    <div class="hero-pre">Photography · Technology · Memories</div>
+    <h1 class="hero-h1">Where <em>moments</em><br>become <em>legacy</em></h1>
+    <p class="hero-sub">A studio where photography meets technology — so every memory lives forever.</p>
+    <div class="hero-acts">
+      <a href="photography.html" class="btn btn-gold">Photography <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      <a href="events-ott.html" class="btn btn-outline">Events OTT <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="scroll-bar"></div>Scroll</div>
+</section>
+
+<!-- ═══ ABOUT BRIEF ═══ -->
+<div class="s-about-brief">
+  <div class="inner wrap">
+    <div class="brief-l">
+      <div class="tag">Our Studio</div>
+      <h2>Stories told through <em>lens</em> &amp; <em>tech</em>.</h2>
+      <p>Cinematic photography. A smart memory app. One studio.</p>
+      <div class="stats">
+        <div class="stat reveal"><div class="stat-n">100+</div><div class="stat-l">Events</div></div>
+        <div class="stat reveal"><div class="stat-n">50+</div><div class="stat-l">Weddings</div></div>
+        <div class="stat reveal"><div class="stat-n">100+</div><div class="stat-l">Clients</div></div>
+      </div>
+    </div>
+    <div class="brief-r">
+      <div class="card">
+        <div style="padding:2.4rem">
+          <div class="tag">Photography</div>
+          <a href ="photography.html"style="font-family:var(--fd);font-size:1.4rem;font-weight:400;color:var(--ivory);margin-bottom:0.5rem"> Redamancy Studio<a href="#photography.html"></a>
+          <p style="color:var(--muted);font-size:0.88rem;line-height:1.7;margin-bottom:1.2rem">Weddings, couples, brands, events — captured with feeling.</p>
+          <div class="brief-spacer"></div>
+          <div class="tag" style="margin-top:1.2rem">Smart App</div>
+          <a href="events-ott.html" style="font-family:var(--fd);font-size:1.4rem;font-weight:400;color:var(--ivory);margin-bottom:0.5rem">Events OTT</a>
+          <p style="color:var(--muted);font-size:0.88rem;line-height:1.7;margin-bottom:1.5rem">One home for every event memory. No more lost drives.</p>
+          <a href="contact.html" class="btn btn-gold" style="font-size:0.72rem;padding:0.65rem 1.4rem">Book a Session <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PHOTO COLLAGE BAND ═══ -->
+<div class="collage-band">
+  <div class="collage-inner">
+    <div class="snap-head">
+      <div><div class="tag">Our Work</div><h2>Photography <em>portfolio</em></h2></div>
+      <a href="photography.html" class="btn btn-outline">See more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+    </div>
+    <h2 class="collage-title">Made in heaven, <em>framed by Redamancy</em></h2>
+
+    <div class="collage-grid">
+      <div class="photo p1"><img src="pictures\weddingv3.png" alt="Wedding moment"></div>
+      <div class="photo p2"><img src="pictures/sangeet2.jpg" alt="Couple portrait"></div>
+      <div class="photo p3"><img src="pictures/weddingu10.jpg" alt="Ceremony"></div>
+      <div class="photo p4"><img src="pictures\prewedk2.jpg" alt="First dance"></div>
+      <div class="photo p5"><img src="pictures/prewedv3.jpeg" alt="Candid"></div>
+      <div class="photo p6"><img src="pictures\pari2.jpg" alt="Bridal portrait"></div>
+      <div class="photo p7"><img src="pictures/haldib1.jpeg" alt="Ceremony"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══ OTT SNAP ═══ -->
+<div class="s-ott-snap">
+  <div class="inner wrap">
+    <div class="ott-t">
+      <div class="tag">Smart Platform</div>
+      <h2>Meet <em>Events OTT</em></h2>
+      <p>Your wedding, your private OTT — every photo, every film, in one place.</p>
+      <div class="badges">
+        <span class="badge">4K Resolution</span>
+        <span class="badge">8K Ultra HD</span>
+        <span class="badge">Cloud Gallery</span>
+        <span class="badge">Instant Preview</span>
+        <span class="badge">Smart Albums</span>
+        <span class="badge">Cross-Platform Access</span>
+        <span class="badge">Secure Backup</span>
+        <span class="badge">Ultra-Fast Delivery</span>
+        <span class="badge">Portfolio Showcase</span>
+        <span class="badge">Cinematic Quality</span>
+      </div>
+      <div style="display:flex;gap:0.8rem;flex-wrap:wrap">
+        <a href="events-ott.html" class="btn btn-gold">Explore <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        <a href="contact.html" class="btn btn-outline">Early Access</a>
+      </div>
+    </div>
+    <div class="ott-v">
+      <div class="phone">
+        <div class="phone-s">
+          <img src="ott/ott4.jpeg" alt="Events OTT preview" height="500">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="fl">
+      <img src="pictures/REDAMANCY%20LOGO.png" alt="Redamancy" class="footer-logo-img">
+    </div>
+    <div class="ftag">Where Moments Become Legacy</div>
+  </div>
+  <div class="flinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="events-ott.html">Events OTT</a>
+    <a href="photography.html">Photography</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+  <div class="fright">
+    <div class="fsoc">
+      <a href="https://www.instagram.com/redamancystudios?igsh=MWY1dHFycmVtdm5uOQ==" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      <a href="https://youtube.com/@redamancystudios?si=GggEJrSpqrrXl3kU" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+    </div>
+    <div class="fcopy">© 2025 Redamancy. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

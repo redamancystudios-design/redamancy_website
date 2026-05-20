@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Us — Redamancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- Overlay for mobile menu -->
+<div id="overlay"></div>
+
+<!-- NAV -->
+<nav class="main-nav">
+  <a href="index.html" class="logo">
+    <img src="pictures/REDAMANCY%20LOGO.png" alt="Redamancy" class="logo-img">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="events-ott.html">Events OTT</a></li>
+    <li><a href="photography.html">Photography</a></li>
+    <li><a href="contact.html" class="nav-btn">Contact Us</a></li>
+  </ul>
+  <button class="ham" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<nav class="mob-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="about.html" onclick="closeMenu()">About Us</a>
+  <a href="photography.html" onclick="closeMenu()">Photography</a>
+  <a href="events-ott.html" onclick="closeMenu()">Events OTT</a>
+  <a href="contact.html" onclick="closeMenu()">Contact Us</a>
+</nav>
+
+<!-- ═══ HERO BANNER (full-bleed with bg image) ═══ -->
+<section class="about-hero">
+  <img src="pictures\weddingu9.png" alt="" class="about-hero-img" aria-hidden="true">
+  <div class="about-hero-overlay"></div>
+  <div class="about-hero-content">
+    <div class="tag">Our Story</div>
+    <h1>The <em>heart</em> behind<br>Redamancy</h1>
+    <p>Where artistry meets technology — and memories are made to last.</p>
+  </div>
+  <div class="about-hero-scroll">Scroll<span class="scroll-line"></span></div>
+</section>
+
+<!-- ═══ STORY (problem + answer) ═══ -->
+<section class="about-story">
+  <div class="wrap">
+    <div class="story-grid">
+
+      <div class="story-card reveal">
+        <div class="story-num">01</div>
+        <div class="tag">The Gap</div>
+        <h3>Memories were getting lost.</h3>
+        <p>Photos scattered across WhatsApp. Drives that expire. USBs that fail. And photography itself often missed the soul of the moment.</p>
+      </div>
+
+      <div class="story-card reveal">
+        <div class="story-num">02</div>
+        <div class="tag">Our Answer</div>
+        <h3>So we built both halves.</h3>
+        <p>A photography studio that tells stories — and Events OTT, an app that organises, curates, and preserves them forever.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MISSION — single italic statement ═══ -->
+<section class="about-mission reveal">
+  <img src="pictures/collage.png" alt="" class="about-collage" aria-hidden="true">
+  <div class="wrap">
+    <div class="mission-inner">
+      <div class="tag">Why We Exist</div>
+      <h2><em>Redamancy</em> — the love that comes back to you.</h2>
+      <p>Every event holds love. We reflect it back — preserved, accessible, eternal.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOUNDERS ═══ -->
+<section class="about-founders">
+  <div class="wrap">
+    <div class="founders-head">
+      <div class="tag">The Team</div>
+      <h2 class="sec-h2">Meet the <em>co-founders</em></h2>
+    </div>
+
+    <div class="founders-grid-v2">
+
+      <article class="founder-card reveal">
+        <div class="founder-photo">
+          <img src="pictures/abhinay.PNG"alt="Abhinay Venkat S" class="founder-img"
+               onerror="this.style.display='none';this.nextElementSibling.classList.add('show')">
+          <div class="founder-initials">AV</div>
+        </div>
+        <div class="founder-meta">
+          <h4>Abhinay Venkat S</h4>
+          <div class="founder-role">Co-Founder · Creative Director</div>
+          <p>The visionary. Abhinay shapes Redamancy's creative identity — from how a wedding is documented to how a platform serves photographers.</p>
+          <div class="founder-socials">
+            
+            <a href="https://www.instagram.com/abhinay_venkat/" aria-label="Instagram" class="fsoc-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="founder-card reveal">
+        <div class="founder-photo">
+          <img src="pictures/tanooj.PNG" alt="Pavan Tanooj Koduri" class="founder-img"
+               onerror="this.style.display='none';this.nextElementSibling.classList.add('show')">
+          <div class="founder-initials">PT</div>
+        </div>
+        <div class="founder-meta">
+          <h4>Pavan Tanooj Koduri</h4>
+          <div class="founder-role">Co-Founder · Technology Lead</div>
+          <p>The architect. Pavan builds the engineering behind Redamancy — the infrastructure that makes seamless memory-keeping real.</p>
+          <div class="founder-socials">
+           
+            <a href="https://www.instagram.com/redamancystudios" aria-label="Instagram" class="fsoc-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ VALUES ═══ -->
+<section class="about-values">
+  <div class="wrap">
+    <div class="values-head">
+      <div class="tag">What We Stand For</div>
+      <h2 class="sec-h2">Our core <em>values</em></h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-tile reveal">
+        <div class="value-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h4>Creativity</h4>
+        <p>Fresh eyes on every project.</p>
+      </div>
+      <div class="value-tile reveal">
+        <div class="value-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <h4>Trust</h4>
+        <p>Your memories, our responsibility.</p>
+      </div>
+      <div class="value-tile reveal">
+        <div class="value-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h4>Quality</h4>
+        <p>No corners cut. Anywhere.</p>
+      </div>
+      <div class="value-tile reveal">
+        <div class="value-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+        </div>
+        <h4>Storytelling</h4>
+        <p>Photos that carry meaning.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA BAND ═══ -->
+<section class="about-cta">
+  <div class="wrap">
+    <h2>Ready to tell your <em>story</em>?</h2>
+    <a href="contact.html" class="btn btn-gold">Start a Conversation
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="fl">
+      <img src="pictures/REDAMANCY%20LOGO.png" alt="Redamancy" class="footer-logo-img">
+    </div>
+    <div class="ftag">Where Moments Become Legacy</div>
+  </div>
+  <div class="flinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="events-ott.html">Events OTT</a>
+    <a href="photography.html">Photography</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+  <div class="fright">
+    <div class="fsoc">
+      <a href="https://www.instagram.com/redamancystudios?igsh=MWY1dHFycmVtdm5uOQ==" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      <a href="https://youtube.com/@redamancystudios?si=GggEJrSpqrrXl3kU" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+    </div>
+    <div class="fcopy">© 2025 Redamancy. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

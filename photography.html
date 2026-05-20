@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Photography — Redamancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- Overlay for mobile menu -->
+<div id="overlay"></div>
+
+<!-- NAV -->
+<nav class="main-nav">
+  <a href="index.html" class="logo">
+    <img src="pictures\REDAMANCY LOGO.png" alt="Redamancy" class="footer-logo-img">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="events-ott.html">Events OTT</a></li>
+    <li><a href="photography.html">Photography</a></li>
+    <li><a href="contact.html" class="nav-btn">Contact Us</a></li>
+  </ul>
+  <button class="ham" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<nav class="mob-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="about.html" onclick="closeMenu()">About Us</a>
+  <a href="photography.html" onclick="closeMenu()">Photography</a>
+  <a href="events-ott.html" onclick="closeMenu()">Events OTT</a>
+  <a href="contact.html" onclick="closeMenu()">Contact Us</a>
+</nav>
+
+<section id="photography">
+
+  <!-- ═══ FULL-BLEED HERO ═══ -->
+  <div class="ph-hero">
+    <img src="pictures/wedding11.JPEG"
+         alt="Cinematic wedding moment captured in golden hour"
+         class="ph-hero-img">
+    <div class="ph-hero-content">
+      <div class="ph-hero-pre">Photography Studio</div>
+      <h1>Wedding storytellers<br>capturing <em>raw emotion</em></h1>
+      <p>From the land of culture, tradition and elegance — we are storytellers on a mission to not just photograph events but capture unscripted laughter, fleeting glances, and the heartfelt connections that are testament to your love story.</p>
+    </div>
+    <div class="ph-hero-scroll">Scroll</div>
+  </div>
+
+  <!-- ═══ LOGO / PRESS STRIP ═══ -->
+  <div class="logo-strip">
+    <div class="logo-track">
+      <span class="logo-item">WeddingPhotography</span>
+      <span class="logo-item">4KPhotography</span>
+      <span class="logo-item">VisualStorytelling</span>
+      <span class="logo-item">SmartGallery</span>
+      <span class="logo-item">MemoriesForever</span>
+      <span class="logo-item">CinematicPhotography</span>
+      <!-- Duplicated for seamless scroll -->
+      <span class="logo-item">WeddingPhotography</span>
+      <span class="logo-item">4KPhotography</span>
+      <span class="logo-item">VisualStorytelling</span>
+      <span class="logo-item">SmartGallery</span>
+      <span class="logo-item">MemoriesForever</span>
+      <span class="logo-item">CinematicPhotography</span>
+    </div>
+  </div>
+
+  
+
+  <!-- ═══ SERVICES STATEMENTS (RVR's dual blocks) ═══ -->
+  <div class="services-statement">
+    <div class="wrap">
+
+      <!-- Films / Wedding Cinematics -->
+      <div class="svc-block reveal">
+        <div class="svc-block-img">
+          <img src="pictures\weddingb3.jpeg"
+               alt="Cinematic wedding film still — couple in candid embrace"
+               loading="lazy">
+        </div>
+        <div class="svc-block-text">
+          <div class="tag">Films</div>
+          <h2>Candid.<br>Cinematic.<br><em>Cherished.</em></h2>
+          <p>Our pre-wedding and wedding films are cinematic masterpieces, crafted with artistry and finesse. More than just documenting traditions, we capture raw emotion, candid moments, and the essence of your love story — every frame reflecting the beauty, grandeur and intimacy of your wedding.</p>
+          <a href="contact.html" class="svc-block-link">
+            Know More
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Photography / Framed Forever -->
+      <div class="svc-block reverse reveal">
+        <div class="svc-block-img">
+          <img src="pictures\weddingk8.jpg"
+               alt="Wedding portrait photography — stolen glance between couple"
+               loading="lazy">
+        </div>
+        <div class="svc-block-text">
+          <div class="tag">Photography</div>
+          <h2>Framed<br><em>Forever.</em></h2>
+          <p>At Redamancy, we go beyond the expected — capturing stolen glances, heartfelt laughter, and the fleeting moments that make your love story truly one of a kind. With artistry and precision, we craft visual heirlooms that preserve your passion, transforming every frame into a timeless masterpiece.</p>
+          <a href="contact.html" class="svc-block-link">
+            Know More
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══ BANNER CTA ═══ -->
+  <div class="banner-cta">
+    <div class="banner-cta-text">
+      Your story, <a href="contact.html">Redamancy style</a>
+    </div>
+  </div>
+
+  <!-- ═══ MISSION BAND ═══ -->
+  <div class="mission-band">
+    <div class="wrap">
+      <div class="tag">Our Promise</div>
+      <h2>Weaving stories of love, <em>worldwide</em></h2>
+      <p>On a mission to tell every story that deserves to be told through our lens. Over 200 stories told, 50+ weddings shot, and a million smiles captured — every frame, an heirloom in the making.</p>
+    </div>
+  </div>
+
+  <!-- ═══ FEATURED WORK GRID ═══ -->
+  <div class="featured-work">
+    <div class="wrap">
+      <div class="fw-head">
+        <div class="tag">Some of our Recent Work</div>
+        <h2>Featured <em>Stories</em></h2>
+      </div>
+      <div class="fw-grid">
+
+        <a class="fw-tile reveal" href="#">
+          <img src="pictures\weddingd1.png" alt="Wedding featured story 1" loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <div class="fw-tile-fallback fw-ph-1" style="display:none"></div>
+          <div class="fw-tile-overlay">
+            <div class="fw-tile-title">Wedding</div>
+            <div class="fw-tile-date">Feb 2026</div>
+          </div>
+        </a>
+
+        <a class="fw-tile reveal" href="#">
+          <img src="pictures\Couple.png" alt="Pre-Wedding featured story 1" loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <div class="fw-tile-fallback fw-ph-2" style="display:none"></div>
+          <div class="fw-tile-overlay">
+            <div class="fw-tile-title">Pre-Wedding</div>
+            <div class="fw-tile-date">14 February 2024</div>
+          </div>
+        </a>
+
+        <a class="fw-tile reveal" href="#">
+          <img src="pictures\weddingp6.jpg" alt="wedding featured story 3" loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <div class="fw-tile-fallback fw-ph-3" style="display:none"></div>
+          <div class="fw-tile-overlay">
+            <div class="fw-tile-title">Wedding</div>
+            <div class="fw-tile-date">December 2024</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <div class="testimonials">
+    <div class="wrap">
+      <div class="test-head">
+        <div class="tag">Client Diaries</div>
+        <h2>From the <em>hearts</em> we've captured</h2>
+      </div>
+      <div class="test-grid">
+
+        <div class="test-card reveal">
+          <div class="test-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="test-quote">Thank you for beautifully capturing these precious moments we can't put into words. A special shout-out to the team for their patience — they captured us so well through all the chaos and laughter.</p>
+          <div class="test-author">Anu &amp; <em>Sandy</em></div>
+        </div>
+
+        <div class="test-card reveal">
+          <div class="test-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="test-quote">Such amazing photos — thank you for capturing such important moments in our lives in such creative ways. We're looking forward to your photos of the coming ceremonies. Truly grateful.</p>
+          <div class="test-author">Ashritha &amp; <em>Shashank</em></div>
+        </div>
+
+        <div class="test-card reveal">
+          <div class="test-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="test-quote">A picture is worth a thousand words and with these beautiful memories you've captured, I can always go back and cherish the most beautiful moments of my life. Kudos to your team for capturing every single moment in the midst of marriage chaos.</p>
+          <div class="test-author">Indusha &amp; <em>Kaushik</em></div>
+        </div>
+
+        <div class="test-card reveal">
+          <div class="test-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="test-quote">Choosing Redamancy was our best decision — every frame reflects passion, precision, and unforgettable wedding memories. Exceptional coordination, constant support, and beautiful captures throughout.</p>
+          <div class="test-author">Niharika &amp; <em>Satwik</em></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ CLOSING CTA (Photo Mosaic) ═══ -->
+  <div class="closing-cta">
+    <!-- Photo mosaic background — 3 images cycled across a grid -->
+    <div class="cta-mosaic" aria-hidden="true">
+      <!-- Row 1 -->
+      <div class="m-tile m-dark"     style="background-image:url('pictures/bride4.jpeg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/pari1.jpg')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/mehb1.jpeg')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/prewedb2.jpeg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/prewedv.jpeg')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/pari4.jpg')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/prewedk5.jpg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/weddingu4.JPEG')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/weddingk6.jpg')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/sangeet5.jpg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/bride5.jpeg')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/weddingp9.CR3')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/wedding12.JPEG')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/weddingv3.png')"></div>
+      <!-- Row 2 -->
+      <div class="m-tile m-darker"   style="background-image:url('pictures/bride2.JPEG')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/Couple.png')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/prewedb3.jpeg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/prewedk7.jpg')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/sangeet6.jpg')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/wedding13.jpeg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/weddingk4.jpg')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/weddingu8.jpeg')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/sangeet3.jpg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/weddingp3.jpg')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/sangeetp1.JPG')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/weddingb3.jpeg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/weddingk8.jpg')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/weddingu15.jpg')"></div>
+      <!-- Row 3 -->
+      <div class="m-tile m-mid"      style="background-image:url('pictures/sangeet5.jpg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/weddingu2.JPEG')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/weddingp4.jpg')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/prewedk5.jpg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/sangeet4.jpg')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/bride5.jpeg')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/events.png')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/pari5.jpg')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/wedding11.JPEG')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/weddingk1.jpg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/weddingu8.jpeg')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/weddingb4.jpeg')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/prewedv.jpeg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/bride6.JPEG')"></div>
+      <!-- Row 4 -->
+      <div class="m-tile m-dark"     style="background-image:url('pictures/haldib2.jpeg')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/pari3.jpg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/prewedb3.jpeg')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/prewedk5.jpg')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/weddinga.jpeg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/weddingd1.png')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/weddingk1.jpg')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/weddingp4.jpg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/weddingk6.jpg')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/weddingu12.jpg')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/weddingp5.jpg')"></div>
+      <div class="m-tile m-darker"   style="background-image:url('pictures/bride6.JPEG')"></div>
+      <div class="m-tile m-dark"     style="background-image:url('pictures/prewed2.jpeg')"></div>
+      <div class="m-tile m-mid"      style="background-image:url('pictures/weddingb4.jpeg')"></div>
+    </div>
+
+    <!-- Centered content over the mosaic -->
+    <div class="cta-content">
+      <h2>Tales of <em>love</em> that transcend time</h2>
+      <p>Breathing life into your story, one frame at a time. Watch your moments unfold with the artistry and passion of Redamancy.</p>
+      <a href="contact.html" class="btn btn-white">
+        Contact Us
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="fl">
+      <img src="pictures\REDAMANCY LOGO.png" alt="Redamancy" class="footer-logo-img">
+    </div>
+    <div class="ftag">Where Moments Become Legacy</div>
+  </div>
+  <div class="flinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="events-ott.html">Events OTT</a>
+    <a href="photography.html">Photography</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+  <div class="fright">
+    <div class="fsoc">
+      <a href="https://www.instagram.com/redamancystudios?igsh=MWY1dHFycmVtdm5uOQ==" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      <a href="https://youtube.com/@redamancystudios" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+    </div>
+    <div class="fcopy">© 2025 Redamancy. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

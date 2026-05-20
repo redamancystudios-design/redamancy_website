@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Events OTT — Redamancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- Overlay for mobile menu -->
+<div id="overlay"></div>
+
+<!-- NAV -->
+<nav class="main-nav">
+  <a href="index.html" class="logo">
+    <img src="pictures\REDAMANCY LOGO.png" alt="Redamancy" class="footer-logo-img">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="events-ott.html">Events OTT</a></li>
+    <li><a href="photography.html">Photography</a></li>
+    <li><a href="contact.html" class="nav-btn">Contact Us</a></li>
+  </ul>
+  <button class="ham" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<nav class="mob-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="about.html" onclick="closeMenu()">About Us</a>
+  <a href="photography.html" onclick="closeMenu()">Photography</a>
+  <a href="events-ott.html" onclick="closeMenu()">Events OTT</a>
+  <a href="contact.html" onclick="closeMenu()">Contact Us</a>
+</nav>
+
+<!-- ═══ EVENTS OTT ═══ -->
+
+  <section id="eventsott">
+  <div class="wrap">
+    
+    <div class="page-hero">
+      
+      <div class="tag">Smart Platform</div>
+      <h1>Your wedding,<br><em>your private OTT</em></h1>
+      <p>One streaming-style home for every photo, film, and memory — no more lost drives or compressed WhatsApp chats.</p>
+    </div>
+   
+
+    <!-- ═══ APP PREVIEW — actual app screenshots ═══ -->
+    <div class="app-preview reveal">
+      <div class="app-preview-head">
+        <div class="tag">Inside the App</div>
+        <h2>A glimpse of <em>Events OTT</em></h2>
+        <p>Browse, preview, and relive — every wedding, presented like a film.</p>
+      </div>
+
+      <!-- Big featured screenshot — browse/home view -->
+      <div class="app-shot-featured">
+        <img src="ott\ott4.jpeg"
+             alt="Events OTT browse view showing featured wedding film, filter chips, and category rows like Marriage, Sangeet, and Wedding Short Films"
+             loading="lazy">
+        <div class="shot-caption">
+          <div>
+            <div class="shot-label">Browse view</div>
+            <h3>Every wedding, its own <em>collection</em></h3>
+          </div>
+          <p>Filter by clip, film, year, or theme — streaming, the way it should feel.</p>
+        </div>
+      </div>
+
+      <!-- 3-up grid: detail modal, player, title card -->
+      <div class="app-shots-grid">
+
+        <div class="app-shot">
+          <img src="ott\ott1.jpeg"
+               alt="Events OTT film detail modal showing Srikanth's P.A.R.I.N.A.Y.A.N.A.M synopsis and episode list"
+               loading="lazy">
+          <div class="app-shot-meta">
+            <div class="shot-label">Film Detail</div>
+            <h4>Synopsis &amp; episodes</h4>
+            <p>Every wedding becomes a series — sangeet, mehndi, reception.</p>
+          </div>
+        </div>
+
+        <div class="app-shot">
+          <img src="ott\ott2.jpeg"
+               alt="Events OTT video player with progress bar, playback controls, subtitle and fullscreen options"
+               loading="lazy">
+          <div class="app-shot-meta">
+            <div class="shot-label">Player</div>
+            <h4>Cinematic playback</h4>
+            <p>Full-screen, full-resolution — with the controls couples actually use.</p>
+          </div>
+        </div>
+
+        <div class="app-shot">
+          <img src="ott\ott3.jpeg"
+               alt="Events OTT episode title card displaying S01E01 The One With The Kidnap in handwritten style"
+               loading="lazy">
+          <div class="app-shot-meta">
+            <div class="shot-label">Title Cards</div>
+            <h4>Custom episode art</h4>
+            <p>Hand-styled cards turn ceremonies into chapters.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card ott-problem reveal">
+      <div class="tag">The Problem</div>
+      <h2 style="font-family:var(--fd);font-size:1.8rem;font-weight:300;margin-bottom:2rem">Why memories <em style="color:var(--gold);font-style:italic">get lost</em></h2>
+      <div class="pain-grid">
+        <div class="pi reveal"><div class="pi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><div><h4>WhatsApp chaos</h4><p>Scattered across group chats. Compressed. Impossible to find.</p></div></div>
+        <div class="pi reveal"><div class="pi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg></div><div><h4>Drive sprawl</h4><p>Unnamed folders. Broken links. Drives that expire.</p></div></div>
+        <div class="pi reveal"><div class="pi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M22 10H2"/></svg></div><div><h4>Lost USBs</h4><p>Physical storage fails — and the memories go with it.</p></div></div>
+      </div>
+    </div>
+    <div class="tag">Process</div>
+    <h2 class="sec-h2">How it <em>works</em></h2>
+    <div class="steps">
+      <div class="step reveal"><div class="step-n">01</div><h4>Create your event</h4><p>Set up a profile in seconds — for any occasion.</p></div>
+      <div class="step reveal"><div class="step-n">02</div><h4>Capture &amp; upload</h4><p>Photographer uploads direct. Guests join via a secure link.</p></div>
+      <div class="step reveal"><div class="step-n">03</div><h4>AI organises</h4><p>Smart tags, auto-grouping, and curated highlight albums.</p></div>
+      <div class="step reveal"><div class="step-n">04</div><h4>Relive forever</h4><p>Full quality. Any device. Anytime.</p></div>
+    </div>
+    <div class="tag" style="margin-top:4rem">Why Choose Us</div>
+    <h2 class="sec-h2">What makes us <em>different</em></h2>
+    <div class="feat-grid">
+      <div class="card feat reveal"><div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg></div><h4>Full resolution</h4><p>No compression. Every frame, exactly as shot.</p></div>
+      <div class="card feat reveal"><div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>Private &amp; secure</h4><p>End-to-end encryption. You control who sees what.</p></div>
+      <div class="card feat reveal"><div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div><h4>Every device</h4><p>iOS, Android, web — synced seamlessly.</p></div>
+      <div class="card feat reveal"><div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div><h4>AI curation</h4><p>Best shots, highlight reels, narrative albums — automatically.</p></div>
+      <div class="card feat reveal"><div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"/></svg></div><h4>Guest uploads</h4><p>One QR code. Every perspective, one album.</p></div>
+      <div class="card feat reveal"><div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg></div><h4>Lifetime storage</h4><p>No expiry. No recurring fees. Ever.</p></div>
+    </div>
+
+    </section>
+    <div class="card cta-block reveal">
+      <img src="pictures/prewed2.jpeg" alt="" class="about-collage" aria-hidden="true">
+      <div class="tag" style="justify-content:center">Get Started</div>
+      <h2>Ready to <em>preserve</em> your story?</h2>
+      <p>Join the photographers and couples already on Events OTT.</p>
+      <div class="cta-acts">
+        <a href="contact.html" class="btn btn-gold">Get Early Access <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        <a href="contact.html" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="fl">
+      <img src="pictures\REDAMANCY LOGO.png" alt="Redamancy" class="footer-logo-img">
+    </div>
+    <div class="ftag">Where Moments Become Legacy</div>
+  </div>
+  <div class="flinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="events-ott.html">Events OTT</a>
+    <a href="photography.html">Photography</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+  <div class="fright">
+    <div class="fsoc">
+      <a href="https://www.instagram.com/redamancystudios?igsh=MWY1dHFycmVtdm5uOQ==" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      <a href="https://youtube.com/@redamancystudios?si=GggEJrSpqrrXl3kU" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+    </div>
+    <div class="fcopy">© 2025 Redamancy. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
